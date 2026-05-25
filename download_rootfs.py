@@ -134,6 +134,7 @@ def entry_to_json(e: RootfsEntry) -> dict:
         "sha256":       e.sha256 or "",
         "size_bytes":   e.size_bytes,
         "build_date":   build_date,
+        "author":       "linuxcontainers",
     }
 
 
