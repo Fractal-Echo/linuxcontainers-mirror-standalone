@@ -24,9 +24,11 @@ JSON_OUT    = Path("rootfs.json")
 CONCURRENCY = 4
 
 DISTROS = {
-    "alpine", "archlinux", "busybox", "centos", "debian",
-    "devuan", "fedora", "gentoo", "kali", "mint",
-    "nixos", "opensuse", "openwrt", "ubuntu", "voidlinux",
+    "almalinux", "alpine", "alt", "amazonlinux", "archlinux",
+    "busybox", "centos", "debian", "devuan", "fedora",
+    "gentoo", "kali", "mint", "nixos", "openeuler",
+    "opensuse", "openwrt", "oracle", "plamo", "rockylinux",
+    "slackware", "ubuntu", "voidlinux",
 }
 ARCH_MAP = {
     "amd64": "x86_64",
@@ -39,21 +41,29 @@ DATED_RE     = re.compile(r"\d{8}_\d{2}(?:%3A|:)\d{2}/?$")
 
 # Human-friendly distro display names
 DISTRO_NAMES = {
-    "alpine":    "Alpine Linux",
-    "archlinux": "Arch Linux",
-    "busybox":   "BusyBox",
-    "centos":    "CentOS",
-    "debian":    "Debian GNU/Linux",
-    "devuan":    "Devuan",
-    "fedora":    "Fedora",
-    "gentoo":    "Gentoo",
-    "kali":      "Kali Linux",
-    "mint":      "Linux Mint",
-    "nixos":     "NixOS",
-    "opensuse":  "openSUSE",
-    "openwrt":   "OpenWrt",
-    "ubuntu":    "Ubuntu",
-    "voidlinux": "Void Linux",
+    "almalinux":  "AlmaLinux",
+    "alpine":     "Alpine Linux",
+    "alt":        "ALT Linux",
+    "amazonlinux":"Amazon Linux",
+    "archlinux":  "Arch Linux",
+    "busybox":    "BusyBox",
+    "centos":     "CentOS",
+    "debian":     "Debian GNU/Linux",
+    "devuan":     "Devuan",
+    "fedora":     "Fedora",
+    "gentoo":     "Gentoo",
+    "kali":       "Kali Linux",
+    "mint":       "Linux Mint",
+    "nixos":      "NixOS",
+    "openeuler":  "openEuler",
+    "opensuse":   "openSUSE",
+    "openwrt":    "OpenWrt",
+    "oracle":     "Oracle Linux",
+    "plamo":      "Plamo Linux",
+    "rockylinux": "Rocky Linux",
+    "slackware":  "Slackware",
+    "ubuntu":     "Ubuntu",
+    "voidlinux":  "Void Linux",
 }
 
 
