@@ -58,6 +58,7 @@ DISTRO_NAMES = {
 @dataclass
 class Entry:
     name:        str
+    author:      str
     distro:      str
     description: str
     architecture: str
@@ -151,6 +152,7 @@ async def crawl_flavor(session, url, distro, version, arch, flavor, results):
 
     results.append(Entry(
         name=name,
+        author="linuxcontainers",
         distro=DISTRO_NAMES.get(distro, distro.title()),
         description=f"Official LXC container image for {name}",
         architecture=arch,
